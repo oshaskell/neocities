@@ -1,0 +1,371 @@
+.alien-pet {
+  color: #83E659;
+}
+
+.apple-pet {
+  color: #6bce39;
+}
+
+.asparagus-pet {
+  color: #708d29;
+}
+
+.aubergine-pet {
+  color: #8c529c;
+}
+
+.avocado-pet {
+  color: #637339;
+}
+
+.baby-pet {
+  color: #b3b21c;
+}
+
+.biscuit-pet {
+  color: #BC9863;
+}
+
+.blue-pet {
+  color: #5f87ff;
+}
+
+.blueberry-pet {
+  color: #3128BD;
+}
+
+.brown-pet,
+.cocoa-pet {
+  color: #A56931;
+}
+
+.camouflage-pet {
+  color: #005b4e;
+}
+
+.candy-pet {
+  color: #ef3eff;
+}
+
+.carrot-pet {
+  color: #FF6633;
+}
+
+.checkered-pet {
+  color: #708090;
+}
+
+.chocolate-pet {
+  color: #694a34;
+}
+
+.chokato-pet {
+  color: #8ca5e7;
+}
+
+.pine-pet {
+  color: #3a6231;
+}
+
+.yuletide-pet,
+.winter-pet,
+.christmas-pet,
+.festive-pet {
+  color: #a21514;
+}
+
+.cloud-pet {
+  color: #9D9DF4;
+}
+
+.coconut-pet {
+  color: #9c7300;
+}
+
+.custard-pet {
+  color: #fdec77;
+}
+
+.darigan-pet {
+  color: #800080;
+}
+
+.desert-pet {
+  color: #d3a347;
+}
+
+.disco-pet {
+  color: #ff63ce;
+}
+
+.durian-pet {
+  color: #A09F29;
+}
+
+.electric-pet {
+  color: #00D9D9;
+}
+
+.faerie-pet {
+  color: #ee82ee;
+}
+
+.fire-pet {
+  color: #BA0707;
+}
+
+.garlic-pet {
+  color: #ACAC6F;
+}
+
+.ghost-pet,
+.spooky-pet {
+  color: #68b4bb;
+}
+
+.glowing-pet {
+  color: #64fd04;
+}
+
+.gold-pet {
+  color: #EFCE08;
+}
+
+.gooseberry-pet {
+  color: #a6c126;
+}
+
+.grape-pet {
+  color: #7d314f;
+}
+
+.green-pet {
+  color: #4ba332;
+}
+
+.grey-pet {
+  color: #858585;
+}
+
+.halloween-pet {
+  color: #FF9900;
+}
+
+.ice-pet,
+.tinsel-pet {
+  color: #78dde9;
+}
+
+.invisible-pet {
+  color: #D3F4F8;
+}
+
+.island-pet {
+  color: #E8CB66;
+}
+
+.jelly-pet {
+  color: #ffa500;
+}
+
+.lemon-pet {
+  color: #FFFF00;
+}
+
+.lime-pet {
+  color: #5FE04B;
+}
+
+.mallow-pet {
+  color: #FA0A0C;
+}
+
+.maraquan-pet,
+.msp-pet {
+  color: #2db3b3;
+}
+
+.mutant-pet {
+  color: #4a2e18;
+}
+
+.onion-pet {
+  color: #eaf0ae;
+}
+
+.orange-pet {
+  color: #fb843e;
+}
+
+.pea-pet {
+  color: #36C422;
+}
+
+.peach-pet {
+  color: #ffc2ac;
+}
+
+.pepper-pet {
+  color: #AF0000;
+}
+
+.pineapple-pet {
+  color: #efd52c;
+}
+
+.pink-pet {
+  color: #f33f9a;
+}
+
+.pirate-pet {
+  color: #7697a0;
+}
+
+.plum-pet {
+  color: #846CAC;
+}
+
+.plushie-pet {
+  color: #5A9ECE;
+}
+
+.purple-pet {
+  color: #714482;
+}
+
+.quigukiboy-pet {
+  color: #42af24;
+}
+
+.quigukigirl-pet {
+  color: #ef10d6;
+}
+
+.rainbow-pet {
+  color: #cb66ff;
+}
+
+.red-pet {
+  color: #ff2222;
+}
+
+.robot-pet {
+  color: #878FA3;
+}
+
+.royalboy-pet {
+  color: #6a5acd;
+}
+
+.royalgirl-pet {
+  color: #8a2be2;
+}
+
+.shadow-pet {
+  color: #242424;
+}
+
+.silver-pet {
+  color: #a2a2a2;
+}
+
+.sketch-pet {
+  color: #a0d1ff;
+}
+
+.skunk-pet {
+  color: #3f3f3f;
+}
+
+.snot-pet {
+  color: #B5DD16;
+}
+
+.snow-pet {
+  color: #d8e7fe;
+}
+
+.speckled-pet {
+  color: #5fc030;
+}
+
+.split-pet {
+  color: #8c5aff;
+}
+
+.sponge-pet {
+  color: #f1e152;
+}
+
+.spotted-pet {
+  color: #f1bf2b;
+}
+
+.starry-pet {
+  color: #0000cd;
+}
+
+.strawberry-pet {
+  color: #dc143c;
+}
+
+.striped-pet {
+  color: #cbdfff;
+}
+
+.thornberry-pet {
+  color: #f73863;
+}
+
+.tomato-pet {
+  color: #e90101;
+}
+
+.tyrannian-pet {
+  color: #cd853f;
+}
+
+.ummagine-pet {
+  color: #610B4B;
+}
+
+.usukiboy-pet {
+  color: #3c41c5;
+}
+
+.usukigirl-pet {
+  color: #7b4ab5;
+}
+
+.white-pet {
+  color: #d3d8e7;
+}
+
+.yellow-pet {
+  color: #ffed26;
+}
+
+.stone-pet {
+  color: #707070;
+}
+
+.glass-pet {
+  color: #49d5ff;
+}
+
+.valentine-pet {
+  color: rgb(255, 0, 85);
+}
+
+.pastel-pet {
+  color: #E0B0FF;
+}
+
+.anniversary-pet,
+.celebratory-pet {
+  color: #00b6e8;
+}
+
+.default-pet {
+  color: black;
+}

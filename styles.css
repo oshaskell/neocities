@@ -1,0 +1,253 @@
+
+       :root {
+                --header-image: url('images/header_showcase.png');
+                --body-bg-image: url('images/bg_redturtle_ghibli_2.jpg');
+                /* colors */
+                --content: #141c0f;
+            }
+    
+
+            @font-face {
+                font-family: Oswald;
+                src: url('fonts/Oswald/static/Oswald-Regular.ttf');
+            }
+
+            @font-face {
+                font-family: Oswald;
+                src: url('fonts/Oswald/static/Oswald-ExtraLight.ttf');
+                font-weight: extra_light;
+            }
+
+            @font-face {
+                font-family: Oswald;
+                src: url('fonts/Oswald/static/Oswald-Light.ttf');
+                font-style: light;
+            }
+
+            @font-face {
+                font-family: Oswald;
+                src: url('fonts/Oswald/static/Oswald-Medium.ttf');
+                font-style: medium;
+            }
+            
+            @font-face {
+                font-family: Oswald;
+                src: url('fonts/Oswald/static/Oswald-SemiBold.ttf');
+                font-style: bold;
+            }
+
+            @font-face {
+            font-family: PTMono;
+            src: url('fonts/PT_Mono/PTMono-Regular.ttf');
+            }
+
+            body {
+                font-family: 'PTMono', sans-serif;
+                margin: 0;
+                background-color: #4b5246;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center center;
+                color: #ffffeb;
+                background-image: var(--body-bg-image);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+      
+      
+      
+      /* CSS for the layout */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #b1db93;
+                font-weight: semibold;
+            }
+
+            #header {
+                border-radius: 0px 0px 25px 25px;
+                width: 100%;
+                background-color: #5e4e8c;
+                height: 150px;
+                background-image: var(--header-image);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0px 5px 5px 5px;
+
+            }
+
+            /* navigation section!! */
+            #navbar {
+                border-radius: 25px;
+                height: 45px;
+                background-color: #2e3b21;
+                width: 100%;
+                margin: 5px;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 5px;
+                list-style-type: none;
+                align-items: center;
+                align-content: center;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 5px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #b1db93;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 600;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #facd52;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                border-radius: 25px;
+                background-color: #1d2614;
+                width: 200px;
+                padding: 5px 15px 15px 15px;
+                margin: 5px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+            aside ul {
+                margin: -10px 0px 10px -10px;
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                border-radius: 25px;
+                background-color: #1f3001;
+                flex: 1;
+                padding: 10px 30px;
+                margin: 5px;
+                order: 2;
+            }
+
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                border-radius: 25px 25px 0px 0px;
+                background-color: #2e3b21;
+                color: #98a87b;
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                margin: 5px 5px 0px 5px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #f5cc3b;
+                font-family: 'Oswald', sans-serif;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #f5cc3b;
+            }
+
+            .box {
+                border-radius: 25px;
+                background-color: #1f3001;
+                border: 1px solid #b1db93;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }

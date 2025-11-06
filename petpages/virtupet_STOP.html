@@ -1,0 +1,654 @@
+<html lang="en" data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>Virtu.Pet - Pet Lookup</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  
+  <link rel="shortcut icon" href="https://virtupetsbucket.s3.us-east-2.amazonaws.com/images/misc/favicon.png" type="image/x-icon">
+  <!-- Other libraries -->
+  <link rel="stylesheet" href="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/jquery-ui.css">
+  <script src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/jquery.min.jsm"></script>
+  <script src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/jquery-ui.min.jsm"></script>
+  <!-- this might not stay due to performance impact. we will see. -->
+  <link rel="stylesheet" href="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/font-awesome.min.css">
+  
+  <!-- Mine -->
+  <link rel="stylesheet" type="text/css" href="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/main.css">
+  
+  
+  
+    
+    
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/default.css">
+  
+
+  
+  
+  <style>
+    @media only screen and (min-width: 1000px) {
+      .wrapper {
+        padding-bottom: 40px;
+        padding-right: 50px;
+        
+          border-left: 2px solid black;
+        
+        
+      }
+      
+      body {
+        
+          background-color: grey;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        
+        }
+
+      body > * {
+        background-color:  white;
+      }
+      
+        html, div, b, p, i, table, tr, th, td {
+          
+          
+        }
+    
+    }
+  </style>
+  
+
+    
+
+    <style type="text/css">
+      #neoFade { display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.5; background: black; filter: alpha(opacity=50); z-index: 9500; }
+    </style>
+  
+    <script type="text/javascript">
+    <!--
+    var nl = "en";
+    var nh = 9;
+    var nm = 17;
+    var ns = 50;
+    var na = "am";
+    var ncl = new Array(0, 53, 104, 137, 169, 198, 231, 265, 299, 335, 368, 397, 427);
+  
+    function sh(i) {
+      ol.style.clip = "rect("+ncl[i-1]+" 128 "+ncl[i]+" 0)";
+      ol.style.visibility = "visible";
+    }
+  
+    function mo() {
+      ol.style.visibility = "hidden";
+    }
+  
+    function search_handle(searchForm) {
+      searchForm.action = "/search";
+      searchForm.target = "";
+      searchForm.method = "post";
+      searchForm.s.value = searchForm.q.value;
+      searchForm.submit();
+    };
+
+    //-->
+    </script>
+    
+</head>
+<body id="neobdy" class="en">
+  
+
+  
+
+  
+
+      
+      
+      <div class="wrapper">
+      
+        
+      
+        <header class="main-site-header">
+          <a href="https://virtu.pet/petcentral" class="main-logo"></a>
+      
+          <div class="user-info">
+            
+            <b class="auth-header">
+              <span class="pr-1">Welcome, </span>
+              <a id="username" href="https://virtu.pet/userlookup/?user=oshaskell" class="username sf">oshaskell</a>
+              <span class="px-1">|</span>
+              <span class="pr-1">Pet :</span> <a class="active-pet sf" href="https://virtu.pet/quickref/">Arnaud</a> 
+              <span class="px-1">|</span>
+              <span class="pr-1">NP :</span> 
+                <a id="np" class="sf" href="https://virtu.pet/inventory/">51,584</a> <span class="px-1">|</span>
+                  <span class="pr-1">VG :</span><a class="sf" href="https://virtu.pet/virtugems">789</a><span class="px-1">|</span> <a class="" href="https://virtu.pet/questlog">Quest Log</a> 
+            </b>
+            
+          </div>
+        </header>
+        <map name="a" class="mapa">
+          <area shape="rect" coords="0,10,130,53" href="https://virtu.pet/addpet" data-it="1" onmouseover="sh(1)" alt="Create a Neopet">
+          <area shape="rect" coords="0,53,130,104" href="https://virtu.pet/petcentral" data-it="2" onmouseover="sh(2)" alt="Pet Central">
+          <area shape="rect" coords="0,104,130,137" href="https://virtu.pet/explore" data-it="3" onmouseover="sh(3)" alt="Explore">
+          <area shape="rect" coords="0,137,130,169" href="https://virtu.pet/games" data-it="4" onmouseover="sh(4)" alt="Games">
+          <area shape="rect" coords="0,169,130,198" href="https://virtu.pet/neomail" data-it="5" onmouseover="sh(5)" alt="Neomail">
+          <area shape="rect" coords="0,198,130,231" href="https://virtu.pet/objects" data-it="6" onmouseover="sh(6)" alt="Shops">
+          <area shape="rect" coords="0,231,130,265" href="https://virtu.pet/neoboards" data-it="7" onmouseover="sh(7)" alt="Neoboards">
+          <area shape="rect" coords="0,265,130,299" href="https://virtu.pet/nf" data-it="8" onmouseover="sh(8)" alt="News">
+          <area shape="rect" coords="0,299,130,335" href="https://virtu.pet/stuff" data-it="9" onmouseover="sh(9)" alt="Stuff">
+          <area shape="rect" coords="0,335,130,368" href="https://virtu.pet/help" data-it="10" onmouseover="sh(10)" alt="Help">
+          <area shape="rect" coords="0,368,130,397" href="https://virtu.pet/login" data-it="11" onmouseover="sh(11)" alt="Login">
+          <area shape="rect" coords="0,397,130,427" href="https://virtu.pet/logout" data-it="12" onmouseover="sh(12)" alt="Logout">
+        </map>
+        <div class="main-sidebar">
+          <div class="links-sidebar relative">
+            
+            <img id="ol" class="absolute" src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/m5on.gif" usemap="#a" style="visibility: hidden;">
+            <img id="m" src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/m5.gif" alt="Sidebar" usemap="#a">
+            
+          </div>
+          <div class="sidebar-div">
+            <div class="nst tooltip">
+              <span id="NST_clock" class="clock" onload="showTime()">11:56:16 NST</span>
+              <span class="tooltiptext">       
+                <span id="RS_timer"></span>
+              </span>
+            </div>
+            <div class="search-bar">
+              
+              <form action="/search/" method="get">
+                <small style="font-size: 10px">Search Neopets:</small>
+                <input class="searchquery" type="text" name="query" size="7">
+                <input type="hidden" name="includes" value="contains">
+                <input type="hidden" name="sortby" value="name">
+                <input type="submit" value="Go!" style="font-size:8pt">
+              </form>
+              
+            </div>
+            
+          </div>
+          
+          
+          <div class="sidebar-bottom">
+            <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/1.gif">
+          </div>
+          
+          
+        </div>
+      
+        <div class="main-content" onmouseover="mo()">
+          <div class="site-banner">
+            
+              
+                
+                <div class="blank-notif"></div>
+                
+              
+              <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/search.gif">
+            
+          </div>
+      
+          
+            
+            
+            <script>
+              function openNav() {
+                document.getElementById("myNav").style.display = "flex";
+              }
+              function closeNav() {
+                document.getElementById("myNav").style.display = "none";
+              }
+              window.onclick = function(event) {
+                if (event.target == document.getElementById("myNav") || event.target == document.getElementsByClassName("overlay-content")[0]) {
+                  document.getElementById("myNav").style.display = "none";
+                }
+              } 
+              </script>
+          
+  
+
+
+    
+      
+      <style type="text/css">
+        * { font-family: Courier; }
+
+:root {
+	--gradient1: #4fff44;
+	--gradient2: #94f48e;
+	--gradient3: #94f48e;
+}
+
+
+body {
+	background-image: url(https://sadhost.neocities.org/images/tiles/background.gif);
+	background-repeat: repeat;
+	background-size: full;
+        color: red !important;
+}
+
+.pet-treasure b {
+ background-color: transparent;
+ background-image: url(URL); /the pet treasure image above the items\
+ background-repeat: no-repeat;
+ background-size: contain;
+border-radius: 10px;}
+
+
+.content {
+	background: -webkit-linear-gradient(var(--gradient1), var(--gradient2), var(--gradient3));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+.pet-statistics,
+.block.text-center.p-2 {
+	background: rgba(0, 0, 0, 0.0) !important;
+        margin: auto;
+	position: center;
+	padding: 0px;
+}
+
+.wrapper {
+	background: rgba(0, 0, 0, 0.9);
+	max-width: 650px;
+	padding: 10px;
+	margin: auto;
+	position: center;
+	left: 0px;
+	right: 0px;
+}
+
+footer {
+	display: none !important;
+}
+
+.main-sidebar,
+.main-site-header,
+hr {
+	display: none;
+}
+
+.main-content {
+	justify-content: center;
+}
+
+.petcircleoverlay {
+	position: auto;
+	top: 67px;
+	left: 23px;
+}
+
+.petbattleoverlay {
+	position: auto;
+	top: 67px;
+	left: 376px;
+}
+
+.m-2.pt-3 {
+	padding: 10px;
+	font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	border: 5px solid;
+	border-image: linear-gradient(to right, var(--gradient1), var(--gradient3), var(--gradient2)) 1 0;
+}
+
+.item-image img {
+	border: 1px dashed var(--gradient1) !important;
+}
+
+.pet_image,
+.battledome_pet_image {
+	opacity: 1;
+}
+
+.usercontent {
+	text-align: center;
+	padding: 10px;
+}
+
+.site-banner {
+background-image: url(https://web.archive.org/web/20091027025714/http://es.geocities.com/hackeruben/imagenes/escaner0101.gif);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+}
+
+.site-banner img {
+visibility: hidden;
+}
+
+.pet_image {
+background-image: url(https://i.imgur.com/ItRAqjc.png);
+background-size: 150px 150px;
+background-repeat: no-repeat;
+background-position: top;
+border: 1px dashed var(--gradient1) !important;
+}
+
+.pet_image img {
+visibility: hidden; /If with custom overlay put this in &#34;hidden&#34;\
+}
+
+.battledome_pet_image {
+background-image: url(URL);
+background-size: 150px 150px;
+background-repeat: no-repeat;
+background-position: top;
+}
+
+.battledome_pet_image img {
+visibility: visible; /If with custom overlay put this in &#34;hidden&#34;\
+}
+
+.petpet-image img { border: 1px dashed var(--gradient1) !important;
+}
+
+.petpet-image {
+background-image: url(URL);
+background-size:82px 82px;
+background-repeat: no-repeat;
+background-position: top;
+}
+
+.petpet-image img {
+visibility: visible;
+}
+
+.neomail-owner img {
+visibility: hidden; /if custom image put &#34;hidden&#34;\
+}
+ 
+.visit-pet-page img {
+visibility: hidden; /if custom image put &#34;hidden&#34;\
+}
+ 
+.neomail-owner {
+background-image: url(https://web.archive.org/web/20091026115933/http://geocities.com/cactus1280/email1.gif);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top;
+}
+ 
+.visit-pet-page {
+background-image: url(https://web.archive.org/web/20091019043829/http://ca.geocities.com/haremycity/profile.GIF);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top;
+}
+
+div.div_name {
+position: fixed; 
+bottom: 30px; 
+left: 10px; 
+}
+
+      </style>
+      
+    
+      <div class="content">
+      
+        
+    
+        <h2 class="text-center">Stop the
+          <span id="pet_colour_text" style="color:#878FA3">
+          
+          Robot
+          </span> Gnorbu 
+          
+        </h2>
+        
+        <div class="pet-lookup">
+          <div class="pet-images break-all text-center">
+            <div class="YOUR_PET neopet break-all text-center">
+              <div class="pet_image">
+                <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/gnorbu_robot_baby.gif" alt="Stop">
+              </div>
+              <b class="pet_name mt-2">Stop</b>
+            </div>
+    
+            
+            <hr size="1" noshade="noshade" align="center">
+    
+            <div class="petpet">
+              <span><b>Stop</b> has a Petpet!!</span>
+                <div class="petpet-image">
+                  <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/millipod.gif" alt="ASSISTANT MANAGER the Millipod" title="ASSISTANT MANAGER the Millipod">
+                </div>
+              <b>ASSISTANT MANAGER <span style="font-weight: normal;">the</span><br>Millipod </b>
+              <span>(2 days and 22 hours old)</span>
+            </div>
+            
+    
+          </div>
+        
+          <div class="pet-statistics">
+            <h4>- Statistics -</h4>
+            <span class="pet-owner"><b>Owner</b> :  osha (<a href="https://virtu.pet/userlookup/?user=oshaskell" style="font-weight:normal; font-size:8pt">You!</a>) </span>
+            <span class="pet-gender"><b>Gender</b> : <b><font color="purple">None </font></b></span>
+            <span class="pet-age"><b>Age</b> : <b>7</b> days (<b>169</b> hours)</span>
+            <span class="pet-birthday"><b>Birthday:</b> January 15 <span title="2025">(Y5)</span></span>
+            <span class="pet-height"><b>Height</b> : tall</span>
+            <span class="pet-weight"><b>Weight</b> : average</span>
+            
+            
+            <hr size="1" noshade="noshade" align="center">
+    
+            <span class="pet-level"><b>Level</b> : 3 </span>
+            <span class="pet-hunger"><b>Hunger</b> : <a style="font-weight: normal" href="https://virtu.pet/gourmetclub/oshaskell/?pet=Stop">
+      bloated
+      </a></span>
+            <span class="pet-hp"><b>Hit Points</b> : <b>
+              <font color="
+                ForestGreen
+                
+              ">15 / 10</font>
+              </b>
+            </span>
+            <span class="pet-str"><b>Strength</b> : 
+      pathetic
+      </span>
+            <span class="pet-def"><b>Defence</b> : 
+      defenceless 
+      </span>
+            <span class="pet-mov"><b>Movement</b> : 
+      barely moves
+      </span>
+            <span class="pet-intel"><b>Intelligence</b> : <a style="font-weight: normal" href="https://virtu.pet/book/oshaskell/?pet=Stop">
+      dim witted
+      </a></span>
+    
+            <hr size="1" noshade="noshade" align="center">
+    
+            <span class="pet-fishing"><b>Fishing Skill</b> : 8</span>
+            
+          </div>
+        
+          <div class="pet-battledome">
+            <div class="battledome_pet_image">
+              <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/gnorbu_robot_right.gif" alt="Stop">
+            </div>
+            <h4>- Battledome Stats -</h4>
+        
+            <span class="pet-bd-played"><b>Played</b> : 0 </span>
+            <span class="pet-bd-won"><b>Won</b> : 0 </span>
+            <span class="pet-bd-lost"><b>Lost</b> : 0 </span>
+            <span class="pet-bd-drawn"><b>Drawn</b> : 0 </span>
+            <span class="pet-bd-score"><b>Score</b> : 0 </span>
+          </div>
+        </div>
+    
+        
+    
+        
+          <div class="pet-treasure" style="width: 60%;
+            ">
+          <b>
+            - Treasure -
+          </b>
+    
+            <div class="item-grid">
+              
+                <div class="item inventory-item" style="margin: 10px 6px 0px 6px">
+                  <div class="item-image">
+                  <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/wind_up_dr__sloth_toy.gif" alt="Wind Up Dr. Sloth Toy" title="It will attempt to take over the universe... till it winds down.">
+                  </div>
+                  <div class="item-name">
+                    <span style="font-size: 8pt">Wind Up Dr. Sloth Toy</span>
+                  </div>
+                </div>
+              
+                <div class="item inventory-item" style="margin: 10px 6px 0px 6px">
+                  <div class="item-image">
+                  <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/oil_and_nuts_slushie.gif" alt="Oil and Nuts Slushie" title="This slushie is known for its cool and refreshing taste. Well robots think it is refreshing.">
+                  </div>
+                  <div class="item-name">
+                    <span style="font-size: 8pt">Oil and Nuts Slushie</span>
+                  </div>
+                </div>
+              
+                <div class="item inventory-item" style="margin: 10px 6px 0px 6px">
+                  <div class="item-image">
+                  <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/pile_of_sludge.gif" alt="Pile of Sludge" title="Ewwww, it is a smelly pile of sludge...">
+                  </div>
+                  <div class="item-name">
+                    <span style="font-size: 8pt">Pile of Sludge</span>
+                  </div>
+                </div>
+              
+            </div>
+    
+        </div>
+        <hr size="1" noshade="noshade" align="center">
+        
+    
+        
+        <div class="user-description m-3">
+          <center><h2>[SCAN IN PROGRESS...]</h2></center>
+<p>
+</p><center><img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/equalizer.gif"><img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/hacker.gif"><img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/equalizer.gif">
+</center>
+<p>
+</p><center><img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/Radar2.gif">
+<img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/compass.gif">
+<img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/radaralert.gif">
+</center>
+<p>
+</p><center><img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/contador.gif">
+</center>
+<p>
+</p><center><h2>[SCAN CONCLUDED.]</h2></center>
+<center><h2>[UNAUTHORIZED PRESENCE DETECTED.]</h2></center>
+<p>
+</p><center><img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/hacker3d.gif">
+</center>
+<p>
+</p><center><h2>[NOTICE:]</h2>
+<p></p><h3>[PLEASE MAKE A <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/dollarspindownd.gif" style="width:15px;height:15px;"> PURCHASE OR DONATION <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/dollarspindownd.gif" style="width:15px;height:15px;"> TO AVOID VAPORIZATION.]</h3>
+<p></p><h3>[LOITERING IS PROHIBITED.]</h3>
+<b><h3>[VIOLATORS WILL BE PROSECUTED.]</h3></b>
+<b><h2>: )</h2>
+<b><h3>[HAVE A FANTASTIC DAY!]</h3>
+
+<p></p></b></b></center>
+        </div>
+        
+    
+        <!-- <hr size="1" noshade="" align="center"> -->
+    
+        <div class="pet-lookup-buttons">
+          <a class="neomail-owner" href="https://virtu.pet/neomail/send?username=oshaskell"> <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/mail_owner.gif" alt="Mail oshaskell"> </a>
+        <a class="visit-pet-page" href="https://virtu.pet/oshaskell/~Stop"> <img src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/visit_petpage.gif" alt="Visit Stop's Pet Page!'"> </a>
+        </div>
+      </div>
+      
+  
+  
+
+
+
+</div>
+<footer class="main-site-footer">
+  <div>
+  
+    <div class="footer-content small">
+      NEOPETS, characters, logos, names and all related indicia<br>
+      are trademarks of <a href="http://www.neopets.com/aboutus.phtml" target="_blank"> <font class="sf">Neopets, Inc., </font></a><font class="sf"> © 1999-2025.
+    </font></div><font class="sf">
+    
+      <div class="footer-content small">
+        <a href="#" class="sf">PRIVACY POLICY</a> | 
+        <a href="https://virtu.pet/aboutus#contact" class="sf">Contact Us</a> | 
+        <a href="https://virtu.pet/aboutus" class="sf">About Us</a> | 
+        <a href="https://virtu.pet/aboutus#credit" class="sf">Custom Asset Credit</a>
+        <br>
+      Use of this site signifies your acceptance of the <a href="#" class="sf">Terms and Conditions</a></div>
+    
+  </font></div><font class="sf">
+</font></footer><font class="sf">
+
+
+</font></div><font class="sf">
+
+<script type="text/javascript">
+function showTime(){
+  let date = new Date();
+  let timeZone = date.toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour12: false });
+  let timeArr = timeZone.split(':')
+  let h = timeArr[0] // 0 - 23
+  let m = timeArr[1]; // 0 - 59
+  let s = timeArr[2]; // 0 - 59
+  let session = "NST";
+  let time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("NST_clock") ? document.getElementById("NST_clock").textContent = time : null;
+  document.getElementById("NST_clock_mobile") ? document.getElementById("NST_clock_mobile").textContent = time : null;
+  setTimeout(showTime, 1000);
+}
+showTime();
+</script>
+
+
+<script type="text/javascript">
+  function showTime() {
+    let date = new Date();
+    let timeZone = date.toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour12:  false  });
+  let timeArr = timeZone.split(':')
+  let h = timeArr[0] // 0 - 23
+  let m = timeArr[1]; // 0 - 59
+  let s = timeArr[2]; // 0 - 59
+  let session = "NST";
+  let time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("NST_clock") ? document.getElementById("NST_clock").textContent = time : null;
+  document.getElementById("NST_clock_mobile") ? document.getElementById("NST_clock_mobile").textContent = time : null;
+  setTimeout(showTime, 1000);
+  }
+  showTime();
+</script>
+
+
+
+
+
+
+
+
+</font><script type="text/javascript" src="Virtu.Pet%20-%20STOP%20-%20Pet%20Lookup_files/minerkill.js"></script></body></html>
