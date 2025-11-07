@@ -95,7 +95,7 @@
 
             .maintitle {
                 position: absolute; 
-                font-size: 100px;
+                font-size: 10vh;
                 font-family: Oswald, sans-serif;
                /*  background: #1d2614;
                 padding: 0px 8px 4px 8px; */
@@ -131,7 +131,6 @@
             #navbar li a {
                 color: #b1db93;
                 font-family: 'Oswald', sans-serif;
-                font-weight: 600;
                 text-decoration: none;
                 text-shadow: 0 2px 0 #1d2614;
                 /* this removes the underline */
@@ -147,9 +146,8 @@
                 display: flex;
             }
 
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
+            /* to style sidebars separately,
+        create styles for #leftSidebar and #rightSidebar */
             aside {
                 border-radius: 25px;
                 background-color: #1d2614;
@@ -203,7 +201,10 @@
                 padding: 10px;
                 margin: 5px 5px 0px 5px;
                 text-align: center;
-                /* this centers the footer text */
+                font-size: 1.5vh;
+                max-height: 300px;
+                overflow-x: auto;
+                
             }
 
             h1,
@@ -233,7 +234,7 @@
                 overflow-y: auto;
             }
 
-            /* CSS for extras */
+            /* extras */
             #topBar {
                 width: 100%;
                 height: 30px;
@@ -242,13 +243,22 @@
                 background-color: #1f3001;
             }
 
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
 
-            /* BELOW THIS POINT IS MEDIA QUERY */
 
-            /* so you wanna change the width of your page? 
+
+
+
+            /* MEDIA QUERY */
+
+            /* to change the width of your page: 
     by default, the container width is 900px.
     in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
+    and then subtract by 100. use this new number as the 
     "max-width" value below
     */
 
