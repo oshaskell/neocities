@@ -77,16 +77,32 @@
             }
 
             #header {
-                border-radius: 0px 0px 25px 25px;
+                
                 width: 100%;
-                background-color: #5e4e8c;
-                height: 150px;
+                background-color: #496c34;
                 background-image: var(--header-image);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
                 margin: 0px 5px 5px 5px;
+                border-radius: 0px 0px 25px 25px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
+            }
+
+            .maintitle {
+                position: absolute; 
+                font-size: 100px;
+                font-family: Oswald, sans-serif;
+               /*  background: #1d2614;
+                padding: 0px 8px 4px 8px; */
+                text-shadow: 0 5px 0 #1d2614;
+                color: white;
+
+                
             }
 
             /* navigation section!! */
@@ -117,6 +133,7 @@
                 font-family: 'Oswald', sans-serif;
                 font-weight: 600;
                 text-decoration: none;
+                text-shadow: 0 2px 0 #1d2614;
                 /* this removes the underline */
             }
 
@@ -145,6 +162,15 @@
 
             aside ul {
                 margin: -10px 0px 10px -10px;
+            }
+
+            #resources {
+                max-height: 800px;
+                overflow-y: auto;
+            }
+
+            #resources li a:hover {
+                color: #facd52;
             }
 
 
@@ -185,10 +211,12 @@
             h3 {
                 color: #f5cc3b;
                 font-family: 'Oswald', sans-serif;
+                text-shadow: 0 2px 0 #151c0e;
             }
 
             h1 {
                 font-size: 22px;
+                text-shadow: 0 3px 0 #151c0e;
             }
 
             strong {
@@ -211,7 +239,7 @@
                 height: 30px;
                 padding: 10px;
                 font-size: smaller;
-                background-color: #13092D;
+                background-color: #1f3001;
             }
 
 
