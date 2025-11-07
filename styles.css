@@ -4,6 +4,7 @@
                 --body-bg-image: url('images/bg_redturtle_ghibli_2.jpg');
                 /* colors */
                 --content: #141c0f;
+                
             }
     
 
@@ -43,7 +44,7 @@
 
             body {
                 font-family: 'PTMono', sans-serif;
-                margin: 0;
+                margin: 0 auto;
                 background-color: #4b5246;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -51,6 +52,9 @@
                 background-position: center center;
                 color: #ffffeb;
                 background-image: var(--body-bg-image);
+
+                scrollbar-width: thin;
+                scrollbar-color: #b1db93 #1f3001;
             }
 
             * {
@@ -78,7 +82,7 @@
 
             #header {
                 
-                width: 100%;
+                max-width: 100%;
                 background-color: #496c34;
                 background-image: var(--header-image);
                 background-size: cover;
@@ -110,7 +114,7 @@
                 border-radius: 25px;
                 height: 45px;
                 background-color: #2e3b21;
-                width: 100%;
+                max-width: 100%;
                 margin: 5px;
             }
 
@@ -196,7 +200,7 @@
                 border-radius: 25px 25px 0px 0px;
                 background-color: #2e3b21;
                 color: #98a87b;
-                width: 100%;
+                max-width: 100%;
                 height: 40px;
                 padding: 10px;
                 margin: 5px 5px 0px 5px;
@@ -206,6 +210,10 @@
                 overflow-x: auto;
                 
             }
+
+
+
+            /* GENERAL STYLES */
 
             h1,
             h2,
@@ -225,13 +233,22 @@
                 color: #f5cc3b;
             }
 
-            .box {
+            .outerbox {
                 border-radius: 25px;
-                background-color: #1f3001;
                 border: 1px solid #b1db93;
+                overflow: hidden;
+            }
+
+            .innerbox {
+                scrollbar-gutter: auto;
+                background-color: #1f3001;
                 padding: 10px;
                 max-height: 300px;
+                max-width: 100%;
+                hyphens: auto;
                 overflow-y: auto;
+                overflow-x: hidden;
+                
             }
 
             /* extras */
